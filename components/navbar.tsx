@@ -13,6 +13,7 @@ const Navbar = () => {
             className="rounded-full p-2 text-white transition-colors duration-300  hover:bg-white hover:text-gray-900"
             href="https://github.com/sashanksakkurthi"
             target={"_blank"}
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -31,6 +32,7 @@ const Navbar = () => {
             className="rounded-full p-2 text-white  transition-colors duration-300 hover:bg-white hover:text-sky-700"
             href="https://www.linkedin.com/in/sakkurthi-sashank/"
             target={"_blank"}
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +49,7 @@ const Navbar = () => {
             className="rounded-full p-2 text-white transition-colors duration-300  hover:bg-white hover:text-sky-500"
             href="https://twitter.com/sashank_123"
             target={"_blank"}
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -65,6 +68,7 @@ const Navbar = () => {
             className="rounded-full p-2  text-white transition-colors duration-300 hover:bg-white hover:text-[#8a3ab9]"
             href="https://www.instagram.com/sakkurthi_sashank/"
             target={"_blank"}
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
