@@ -7,7 +7,7 @@ const Header = () => {
       <div className="flex flex-col items-center gap-10 sm:gap-6">
         <div className="flex flex-col items-center">
           <div className="font-Roboto text-2xl font-bold text-gray-800 sm:text-4xl md:text-6xl ">
-            Hey I'm Sashank Sakkurthi
+            Hey ✌ Im Sashank Sakkurthi
           </div>
           <div className="text-xs font-semibold text-gray-700 sm:text-sm">
             Full Stack Web developer / Devops / UI & Ux
@@ -19,6 +19,7 @@ const Header = () => {
             src={"/sashank.png"}
             height={"350"}
             width={"350"}
+            alt={""}
           />
         </div>
         <button className="animate-bounce rounded-full  bg-gradient-to-r from-[#FF5F6D] to-[#FFC371] p-2  text-white">
