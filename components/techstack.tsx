@@ -10,12 +10,12 @@ const TechStack = () => {
     {
       id: 2,
       name: "App Development",
-      percentage: 40,
+      percentage: 50,
     },
     {
       id: 3,
       name: "Devops",
-      percentage: 50,
+      percentage: 60,
     },
   ];
   return (
@@ -40,7 +40,8 @@ const TechProgressBar = (props: { percentage: number; name: string }) => {
       </div>
       <div className="h-2 w-60 rounded-full bg-gray-200 sm:w-96">
         <div
-          className={`h-2 w-[${props.percentage}%] rounded-full bg-blue-600`}
+          className={`h-2 rounded-full bg-blue-600`}
+          style={{ width: `${props.percentage}%` }}
         ></div>
       </div>
     </div>
