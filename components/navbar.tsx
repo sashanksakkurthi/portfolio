@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="flex h-16 flex-row items-center justify-between bg-gray-900 p-4 sm:justify-evenly sm:p-0">
-      <div className="text-md font-Inter font-medium text-gray-100 sm:text-xl">
+      <div className="text-lg font-Inter font-medium text-gray-100 sm:text-xl">
         Sashank Sakkurthi
       </div>
       <div className="flex w-44 justify-around md:w-56">
