@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="text-lg font-Inter font-medium text-gray-100 sm:text-xl">
         Sashank Sakkurthi
       </div>
-      <div className="flex w-44 justify-around md:w-56">
+      <div className="flex w-34 justify-around md:w-56">
         <button className="rounded-full p-2 text-white transition-colors duration-300  hover:bg-white hover:text-gray-900">
           <svg
             xmlns="http://www.w3.org/2000/svg"
