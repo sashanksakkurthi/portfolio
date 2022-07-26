@@ -1,41 +1,56 @@
-import Image from "next/image";
+import { Box, Text, Flex, Heading, Image, IconButton } from "@chakra-ui/react";
+
 import React from "react";
 
 const Header = () => {
   return (
-    <div className="w-screen py-16">
-      <div className="flex flex-col items-center gap-10 sm:gap-6">
-        <div className="flex flex-col items-center">
-          <div className="font-Roboto text-2xl font-bold text-gray-800 sm:text-4xl md:text-6xl ">
-            Hey ✌ Im Sashank Sakkurthi
-          </div>
-          <div className="text-xs font-semibold text-gray-700 sm:text-sm">
-            Full Stack Web developer / Devops / UI & Ux
-          </div>
-        </div>
-        <div className="">
+    <Box bgGradient={"radial(gray.900,gray.800)"}>
+      <Flex
+        direction={"column"}
+        minH={"2xl"}
+        align={"center"}
+        justify={"center"}
+        gap={6}
+      >
+        <Box>
           <Image
-            className="rounded-full"
+            rounded={"full"}
             src={"/sashank.png"}
-            height={"350"}
-            width={"350"}
+            width={"300"}
+            height={"300"}
+            bg={"white"}
             alt={""}
           />
-        </div>
-        <button className="animate-bounce rounded-full  bg-gradient-to-r from-[#FF5F6D] to-[#FFC371] p-2  text-white">
+        </Box>
+        <Flex direction={"column"} align={"center"} justify={"center"}>
+          <Heading
+            fontSize={{ base: "2xl", md: "5xl" }}
+            textColor={"gray.100"}
+            fontFamily={"Inter"}
+          >
+            Hey I&#39;m Sashank Saskkurthi
+          </Heading>
+          <Text
+            textColor={"gray.100"}
+            fontSize={{ base: "xs", md: "xl" }}
+            fontFamily={"Roboto"}
+          >
+            Web Developer / Devops / App Developer / UI & UX
+          </Text>
+        </Flex>
+        <IconButton aria-label={""} rounded={"full"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="16"
+            height="16"
             fill="currentColor"
-            className="bi bi-arrow-down"
             viewBox="0 0 16 16"
           >
             <path d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
           </svg>
-        </button>
-      </div>
-    </div>
+        </IconButton>
+      </Flex>
+    </Box>
   );
 };
 

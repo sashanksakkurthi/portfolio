@@ -1,3 +1,4 @@
+import { Divider } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Contact from "../components/contact";
 import Header from "../components/header";
