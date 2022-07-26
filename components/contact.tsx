@@ -1,54 +1,94 @@
+import {
+  Box,
+  Button,
+  Flex,
+  FormControl,
+  FormLabel,
+  Heading,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  Stack,
+  Textarea,
+  VStack,
+} from "@chakra-ui/react";
 import React from "react";
 
-const Contact = () => {
+export default function ContactFormWithSocialButtons() {
   return (
-    <div className="flex  h-screen w-screen flex-col items-center gap-10 py-16">
-      <div className="flex w-full max-w-sm space-x-3">
-        <div className="m-auto mt-10 w-full max-w-2xl rounded-lg bg-white px-5 py-10 ">
-          <div className="mb-6 text-center font-Inter text-3xl font-medium text-gray-800">
-            Contact me
-          </div>
-          <div className="m-auto grid max-w-xl grid-cols-2 gap-4">
-            <div className="col-span-2 lg:col-span-1">
-              <input
-                type="text"
-                className="w-full flex-1 appearance-none rounded-md border border-gray-300 border-transparent bg-white py-2 px-4 font-Roboto text-base text-gray-700 placeholder-gray-400 focus:outline-none"
-                placeholder="Your Name"
-              />
-            </div>
-            <div className="col-span-2 lg:col-span-1">
-              <input
-                type="text"
-                id="contact-form-email"
-                className="w-full flex-1 appearance-none rounded-md border border-gray-300 border-transparent bg-white py-2 px-4 font-Roboto text-base text-gray-700 placeholder-gray-400 focus:outline-none"
-                placeholder="Your Email"
-              />
-            </div>
-            <div className="col-span-2">
-              <label className="text-gray-700" htmlFor="name">
-                <textarea
-                  className="w-full flex-1 appearance-none rounded-md border border-gray-300 border-transparent bg-white py-2 px-4 font-Roboto text-base text-gray-700 placeholder-gray-400 focus:outline-none"
-                  id="comment"
-                  placeholder="Message"
-                  name="comment"
-                  rows={5}
-                  cols={40}
-                ></textarea>
-              </label>
-            </div>
-            <div className="col-span-2 text-right">
-              <button
-                type="submit"
-                className="w-full rounded-md  bg-sky-400 py-2 px-4 text-center text-base font-semibold text-white shadow-md transition duration-200 ease-in hover:bg-sky-500 focus:outline-none"
-              >
-                Send
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+    <Flex align="center" justify="center" id="contact" h={"2xl"}>
+      <Box borderRadius="lg" p={{ base: 5, lg: 10 }}>
+        <Box>
+          <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
+            <Heading
+              fontSize={{
+                base: "4xl",
+                md: "5xl",
+              }}
+            >
+              Contact me
+            </Heading>
 
-export default Contact;
+            <Stack
+              spacing={{ base: 4, md: 8, lg: 20 }}
+              direction={{ base: "column", md: "row" }}
+            >
+              <Box
+                bg={"white"}
+                minW={{ sm: "96" }}
+                borderRadius="lg"
+                p={8}
+                color={"gray.700"}
+                shadow="base"
+              >
+                <VStack spacing={5}>
+                  <FormControl isRequired>
+                    <FormLabel>Name</FormLabel>
+
+                    <InputGroup>
+                      <Input type="text" name="name" placeholder="Your Name" />
+                    </InputGroup>
+                  </FormControl>
+
+                  <FormControl isRequired>
+                    <FormLabel>Email</FormLabel>
+
+                    <InputGroup>
+                      <Input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                      />
+                    </InputGroup>
+                  </FormControl>
+
+                  <FormControl isRequired>
+                    <FormLabel>Message</FormLabel>
+
+                    <Textarea
+                      name="message"
+                      placeholder="Your Message"
+                      rows={6}
+                      resize="none"
+                    />
+                  </FormControl>
+
+                  <Button
+                    colorScheme="blue"
+                    bg="blue.400"
+                    color="white"
+                    _hover={{
+                      bg: "blue.500",
+                    }}
+                  >
+                    Send Message
+                  </Button>
+                </VStack>
+              </Box>
+            </Stack>
+          </VStack>
+        </Box>
+      </Box>
+    </Flex>
+  );
+}
