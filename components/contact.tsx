@@ -16,7 +16,7 @@ import React from "react";
 
 export default function ContactFormWithSocialButtons() {
   return (
-    <Flex align="center" justify="center" id="contact" h={"2xl"}>
+    <Flex align="center" justify="center" id="contact" minH={"2xl"}>
       <Box borderRadius="lg" p={{ base: 5, lg: 10 }}>
         <Box>
           <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
