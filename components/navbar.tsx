@@ -9,18 +9,18 @@ const Navbar = () => {
         align={"center"}
         justify={{ base: "space-between", sm: "space-around" }}
         h={"14"}
-        bg={"#18181b"}
+        // bg={"#18181b"}
         px={{ base: "2", sm: "0" }}
       >
         <Box></Box>
-        <Flex align={"center"} w={"44"} justify={"space-between"}>
+        <Flex align={"center"} w={"56"} justify={"space-between"}>
           <Link href={""}>
             <a href="">
               <IconButton
                 rounded={"full"}
                 bg={"white"}
                 textColor={"gray.700"}
-                size={"sm"}
+                size={"md"}
                 aria-label={""}
                 _hover={{
                   textColor: "white",
@@ -29,8 +29,8 @@ const Navbar = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="23"
+                  height="23"
                   fill="currentColor"
                   viewBox="0 0 16 16"
                 >
@@ -45,7 +45,7 @@ const Navbar = () => {
                 rounded={"full"}
                 bg={"white"}
                 textColor={"#0369a1"}
-                size={"sm"}
+                size={"md"}
                 aria-label={""}
                 _hover={{
                   textColor: "white",
@@ -54,8 +54,8 @@ const Navbar = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
+                  width="23"
+                  height="23"
                   fill="currentColor"
                   viewBox="0 0 16 16"
                 >
@@ -70,7 +70,7 @@ const Navbar = () => {
                 rounded={"full"}
                 bg={"white"}
                 textColor={"#38bdf8"}
-                size={"sm"}
+                size={"md"}
                 aria-label={""}
                 _hover={{
                   textColor: "white",
@@ -79,8 +79,8 @@ const Navbar = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="23"
+                  height="23"
                   fill="currentColor"
                   viewBox="0 0 16 16"
                 >
@@ -95,7 +95,7 @@ const Navbar = () => {
                 rounded={"full"}
                 bg={"white"}
                 textColor={"#c026d3"}
-                size={"sm"}
+                size={"md"}
                 aria-label={""}
                 _hover={{
                   textColor: "white",
@@ -104,8 +104,8 @@ const Navbar = () => {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="23"
+                  height="23"
                   fill="currentColor"
                   viewBox="0 0 16 16"
                 >

@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import AboutMe from "../components/aboutme";
 import Contact from "../components/contact";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
@@ -9,6 +10,7 @@ const Home: NextPage = () => {
     <>
       <Navbar />
       <Header />
+      <AboutMe />
       <TechStack />
       <Contact />
     </>

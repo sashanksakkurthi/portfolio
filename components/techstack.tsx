@@ -13,11 +13,11 @@ import React from "react";
 const TechStack = () => {
   return (
     <Box mt={"-1"}>
-      <Flex justify={"center"} py={"14"} bg={"#18181b"}>
+      <Flex justify={"center"} py={"14"}>
         <VStack gap={10}>
           <Heading
-            textColor={"gray.100"}
-            fontWeight={"semibold"}
+            textColor={"gray.900"}
+            fontWeight={"bold"}
             fontFamily={"Inter"}
           >
             My Tech Stack
@@ -87,7 +87,7 @@ const Technology = () => {
             width={"44"}
             fontSize={"lg"}
             fontWeight={"semibold"}
-            textColor={"gray.300"}
+            textColor={"gray.800"}
           >
             {value.name}
           </Text>

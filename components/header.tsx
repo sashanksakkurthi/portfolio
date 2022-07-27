@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <Box bg={"#18181b"}>
+    <Box>
       <Flex
         direction={"column"}
         minH={"2xl"}
@@ -33,7 +33,7 @@ const Header = () => {
             Hey I&#39;m Sashank Saskkurthi
           </Heading>
           <Text
-            textColor={"gray.100"}
+            textColor={"gray.800"}
             fontSize={{ base: "xs", md: "xl" }}
             fontFamily={"Roboto"}
             fontWeight={"light"}
