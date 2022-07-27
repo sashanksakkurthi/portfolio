@@ -4,8 +4,8 @@ import React from "react";
 const AboutMe = () => {
   return (
     <Box mt={"-1"}>
-      <Flex justify={"center"} py={"14"} >
-        <VStack gap={10}>
+      <Flex justify={"center"} py={"14"}>
+        <VStack gap={20}>
           <Heading
             textColor={"gray.700"}
             fontWeight={"bold"}
