@@ -9,22 +9,10 @@ const Navbar = () => {
         align={"center"}
         justify={{ base: "space-between", sm: "space-around" }}
         h={"14"}
-        bgGradient={"radial(gray.900, gray.800)"}
+        bg={"#18181b"}
         px={{ base: "2", sm: "0" }}
       >
-        <Box>
-          <Text
-            bg={"white"}
-            fontFamily={"Inter"}
-            fontWeight={"bold"}
-            textColor={"#0ea5e9"}
-            px={"3"}
-            rounded={"full"}
-            fontSize={"2xl"}
-          >
-            S
-          </Text>
-        </Box>
+        <Box></Box>
         <Flex align={"center"} w={"44"} justify={"space-between"}>
           <Link href={""}>
             <a href="">
