@@ -15,7 +15,7 @@ const Navbar = () => {
         <Box></Box>
         <Flex align={"center"} w={"56"} justify={"space-between"}>
           <Link href={""}>
-            <a href="https://github.com/sashanksakkurthi" target={"_blank"}>
+            <a href="https://github.com/sashanksakkurthi" rel="noreferrer" target={"_blank"}>
               <IconButton
                 rounded={"full"}
                 bg={"white"}
@@ -43,6 +43,7 @@ const Navbar = () => {
             <a
               href="https://www.linkedin.com/in/sakkurthi-sashank/"
               target={"_blank"}
+              rel="noreferrer"
             >
               <IconButton
                 rounded={"full"}
@@ -68,7 +69,7 @@ const Navbar = () => {
             </a>
           </Link>
           <Link href={""}>
-            <a href="https://twitter.com/sashank_123" target={"_blank"}>
+            <a href="https://twitter.com/sashank_123" rel="noreferrer"  target={"_blank"}>
               <IconButton
                 rounded={"full"}
                 bg={"white"}
@@ -96,6 +97,7 @@ const Navbar = () => {
             <a
               href="https://www.instagram.com/sakkurthi_sashank/"
               target={"_blank"}
+              rel="noreferrer"
             >
               <IconButton
                 rounded={"full"}
