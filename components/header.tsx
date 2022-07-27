@@ -4,7 +4,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <Box bgGradient={"radial(gray.900,gray.800)"}>
+    <Box bg={"#18181b"}>
       <Flex
         direction={"column"}
         minH={"2xl"}
@@ -25,8 +25,10 @@ const Header = () => {
         <Flex direction={"column"} align={"center"} justify={"center"}>
           <Heading
             fontSize={{ base: "2xl", md: "5xl" }}
-            textColor={"gray.100"}
-            fontFamily={"Inter"}
+            bgGradient="linear(to-l, #7928CA, #FF0080)"
+            bgClip="text"
+            fontFamily={"Poppins"}
+            fontWeight={"medium"}
           >
             Hey I&#39;m Sashank Saskkurthi
           </Heading>
@@ -34,6 +36,7 @@ const Header = () => {
             textColor={"gray.100"}
             fontSize={{ base: "xs", md: "xl" }}
             fontFamily={"Roboto"}
+            fontWeight={"light"}
           >
             Web Developer / Devops / App Developer / UI & UX
           </Text>
